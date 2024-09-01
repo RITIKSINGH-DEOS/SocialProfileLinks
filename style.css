@@ -1,0 +1,158 @@
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+    color: var(--White);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--Grey-900);
+}
+
+.main-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Grey-800);
+    margin-top: 5%;
+    height: 75%;
+    width: 23%;
+    border-radius: 2%;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 30%;
+    height: 80%;
+    border-radius: 50%;
+    justify-content: center;
+
+}
+
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.button-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+a {
+    margin-bottom: 15px;
+    font-size: small;
+    font-weight: bold;
+}
+
+.button {
+
+    background-color: var(--Grey-700);
+    border-radius: .2rem;
+    padding: 10px 90px;
+    cursor: pointer;
+
+}
+
+.button:hover {
+    background-color: var(--Green);
+    color: black;
+    transition: .5s;
+
+}
+
+p {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: small;
+}
+
+h6 {
+    margin-top: 5px;
+}
+
+span {
+    color: var(--Green);
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+
+
+h1 {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+@media (max-width: 375px) {
+
+    .main-container {
+        width: 85%;
+        height: 75%;
+        margin-top: 5rem;
+    }
+
+    .button-container {
+        margin-top: 15px;
+        width: 90%;
+    }
+
+    a {
+        font-size: .7rem;
+    }
+
+    img {
+        width: 25%;
+        height: 80%;
+
+    }
+
+}
+
+@media (min-width:376px) and (max-width:1440px) {
+
+    .main-container {
+        width: 85%;
+        height: 90%;
+        margin-top: 2.5rem;
+    }
+
+    img {
+        width: 20%;
+        height: 70%;
+        margin-top: 30px;
+    }
+}
